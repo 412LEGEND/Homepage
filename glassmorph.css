@@ -1,3 +1,29 @@
 :root {
-    --blur: blur(20px)
+    --gls-blur: blur(20px);
+    
+    --gls-grad-red-vio: linear-gradient(130deg, #ac1a2a, #1f1fb2 41.07%, #bb2dfd 76.05%);
+    --gls-grad-gre-blu: linear-gradient(-130deg, #81aa4d, #088ab0);
+    --gls-grad-rainbow: linear-gradient(100deg, #a33, #3a3, #33a);
+
+    --gls-light: #aaaaaa33;
+    --gls-dark: #11111133;
+
+    --gls-text-color: #eeeeeecc;
+
+    --gls-bord-rad: 10px;
+}
+
+.gls .comp {
+    border-width: 0px;
+    border-radius: var(--gls-bord-rad);
+    backdrop-filter: var(--gls-blur);
+    color: var(--gls-text-color);
+}
+
+.gls .card .light {
+    background-color: var(--gls-light);
+}
+
+.gls .card .light {
+    background-color: var(--gls-dark);
 }
